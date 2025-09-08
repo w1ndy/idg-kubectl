@@ -4,7 +4,7 @@ FROM debian:bookworm
 RUN apt-get update && apt-get install -y gettext-base bash curl && rm -rf /var/lib/apt/lists/*
 
 # install kubectl
-RUN curl -sSL https://dl.k8s.io/release/v1.30.5/bin/linux/amd64/kubectl -o /usr/bin/kubectl
+RUN curl -sSL https://dl.k8s.io/release/v1.30.14/bin/linux/amd64/kubectl -o /usr/bin/kubectl
 RUN chmod +x /usr/bin/kubectl
 
 # install kn
